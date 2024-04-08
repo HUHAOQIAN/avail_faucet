@@ -1,0 +1,12 @@
+{
+  "devDependencies": {
+    "@polkadot/api": "^10.12.6",
+    "@types/node": "^20.12.5",
+    "axios": "^1.6.8",
+    "dotenv": "^16.4.5",
+    "fs": "^0.0.1-security",
+    "socks-proxy-agent": "^8.0.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.4"
+  }
+}
