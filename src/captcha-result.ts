@@ -3,7 +3,7 @@ import { SocksProxyAgent } from "socks-proxy-agent";
 import * as dotenv from "dotenv";
 dotenv.config();
 const url = "https://api.yescaptcha.com/createTask";
-const websiteKey = "6Lc94akpAAAAAGaxYMKiA0qBqL10gSblHpeyD7xZ"; //目标网站的 reCAPTCHA v3 site key
+const websiteKey = "6Lc94akpAAAAAGaxYMKiA0qBqL10gSblHpeyD7xZ"; //目标网站的 reCAPTCHA v3 site key  https://yescaptcha.atlassian.net/wiki/spaces/YESCAPTCHA/pages/12746875/reCaptcha
 const websiteURL = "https://faucet.avail.tools/"; // 目标网站的 URL
 const clientKey = process.env.YESCAPTCHA_KEY!; // 你的 YesCaptcha 客户端密钥
 
