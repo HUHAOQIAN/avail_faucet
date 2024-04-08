@@ -3,9 +3,11 @@ import { getTaskResult } from "./captcha-result";
 import { SocksProxyAgent } from "socks-proxy-agent";
 import fs from "fs";
 import { getAddressesWithZeroBalances } from "./get-balance";
+import * as dotenv from "dotenv";
+dotenv.config();
 async function getIp() {
-  const url =
-    "http://list.sky-ip.net/user_get_ip_list?token=SGT8KGdJqt18WMXB1677337793961&qty=1&country=sg&time=5&format=json&protocol=socks5";
+  const url = process.env.SKY_IP_URL!;
+
   const response = await axios.get(url);
   const ip = `socks://${response.data.data[0]}`;
   return ip;
